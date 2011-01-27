@@ -19,6 +19,7 @@ WriteMakefile(
         'FindBin'                   => 0,
         'List::MoreUtils'           => 0,
         'MIME::Base64'              => 0,
+        'namespace::clean'          => 0,
         'Scalar::Util'              => 0,
         'Storable'                  => 0,
         'Test::Exception'           => 0,
