@@ -8,7 +8,7 @@ use Carp qw(croak);
 
 use namespace::clean;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 __PACKAGE__->readonly(qw/completed_at created_at id updated_at/);
 __PACKAGE__->accessor(qw/description name position/);
@@ -102,7 +102,7 @@ AnyEvent::WebService::Tracks::Project - Tracks project objects
 
 =head1 VERSION
 
-0.01
+0.02
 
 =head1 SYNOPSIS
 

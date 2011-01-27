@@ -16,7 +16,7 @@ use AnyEvent::WebService::Tracks::Context;
 use AnyEvent::WebService::Tracks::Project;
 use AnyEvent::WebService::Tracks::Todo;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub new {
     my ( $class, %params ) = @_;
@@ -433,7 +433,7 @@ AnyEvent::WebService::Tracks - Access Tracks' API from AnyEvent
 
 =head1 VERSION
 
-0.01
+0.02
 
 =head1 SYNOPSIS
 

@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use parent 'AnyEvent::WebService::Tracks::Resource';
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 __PACKAGE__->readonly(qw/created_at id updated_at/);
 __PACKAGE__->accessor(qw/name position/);
@@ -55,7 +55,7 @@ AnyEvent::WebService::Tracks::Context - Tracks context objects
 
 =head1 VERSION
 
-0.01
+0.02
 
 =head1 SYNOPSIS
 

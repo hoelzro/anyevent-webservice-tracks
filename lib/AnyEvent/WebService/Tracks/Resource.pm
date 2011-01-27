@@ -6,7 +6,7 @@ use warnings;
 use Carp qw(croak);
 use namespace::clean;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub readonly {
     my ( $class, @fields ) = @_;
@@ -119,7 +119,7 @@ AnyEvent::WebService::Tracks::Resource - Generic superclass for Tracks resources
 
 =head1 VERSION
 
-0.01
+0.02
 
 =head1 DESCRIPTION
 

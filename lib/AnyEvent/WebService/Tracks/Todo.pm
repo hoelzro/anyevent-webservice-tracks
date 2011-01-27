@@ -9,7 +9,7 @@ use Scalar::Util qw(looks_like_number);
 
 use namespace::clean;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 __PACKAGE__->readonly(qw/completed_at created_at id recurring_todo_id updated_at/);
 __PACKAGE__->accessor(qw/description due notes show_from/);
@@ -137,7 +137,7 @@ AnyEvent::WebService::Tracks::Todo - Tracks todo objects
 
 =head1 VERSION
 
-0.01
+0.02
 
 =head1 SYNOPSIS
 
