@@ -139,7 +139,7 @@ sub do_request {
 
     my ( $username, $password ) = @{$self}{qw/username password/};
 
-    my $auth_token = encode_base64(join(':', $username, $password));
+    my $auth_token = encode_base64(join(':', $username, $password), '');
     $params->{'headers'} = {
         Authorization => "Basic $auth_token",
         Accept        => 'application/xml',
