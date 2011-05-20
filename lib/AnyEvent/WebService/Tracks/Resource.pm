@@ -6,8 +6,6 @@ use warnings;
 use Carp qw(croak);
 use namespace::clean;
 
-our $VERSION = '0.02';
-
 sub readonly {
     my ( $class, @fields ) = @_;
 
@@ -113,13 +111,7 @@ sub update {
 
 __END__
 
-=head1 NAME
-
-AnyEvent::WebService::Tracks::Resource - Generic superclass for Tracks resources
-
-=head1 VERSION
-
-0.02
+# ABSTRACT: Resource superclass
 
 =head1 DESCRIPTION
 
@@ -143,29 +135,11 @@ to the callback upon success, or a falsy value and an error message on failure.
 Submits pending updates to Tracks.  Provides C<$resource> to the callback on
 success, or a falsy value and and error message on failure.
 
-=head1 AUTHOR
-
-Rob Hoelz, C<< rob at hoelz.ro >>
-
-=head1 BUGS
-
-Please report any bugs or feature requests to C<bug-AnyEvent-WebService-Tracks at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=AnyEvent-WebService-Tracks>. I will
-be notified, and then you'll automatically be notified of progress on your bug as I make changes.
-
-=head1 COPYRIGHT & LICENSE
-
-Copyright 2011 Rob Hoelz.
-
-This module is free software; you can redistribute it and/or modify it under
-the same terms as Perl itself.
-
 =head1 SEE ALSO
 
-L<AnyEvent::WebService::Tracks::Context>,
-L<AnyEvent::WebService::Tracks::Project>,
-L<AnyEvent::WebService::Tracks::Todo>,
-L<AnyEvent::WebService::Tracks>
+AnyEvent::WebService::Tracks::Context
+AnyEvent::WebService::Tracks::Project
+AnyEvent::WebService::Tracks::Todo
 
 =begin comment
 

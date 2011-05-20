@@ -1,1 +1,7 @@
+This archive contains the distribution {{ $dist->name }}, version {{ $dist->version }}:
+
+{{ $dist->abstract }}
+
 To test, you'll need to set the TRACKS_URL, TRACKS_USER, and TRACKS_PASS environment variables.
+
+{{ $dist->license->notice }}

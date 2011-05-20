@@ -16,8 +16,6 @@ use AnyEvent::WebService::Tracks::Context;
 use AnyEvent::WebService::Tracks::Project;
 use AnyEvent::WebService::Tracks::Todo;
 
-our $VERSION = '0.02';
-
 sub new {
     my ( $class, %params ) = @_;
 
@@ -427,13 +425,7 @@ sub create_todo {
 
 __END__
 
-=head1 NAME
-
-AnyEvent::WebService::Tracks - Access Tracks' API from AnyEvent
-
-=head1 VERSION
-
-0.02
+# ABSTRACT: Access Tracks' API from AnyEvent
 
 =head1 SYNOPSIS
 
@@ -513,27 +505,9 @@ be provided instead of just two scalars if more flexibility is desired) and
 passes the new todo object to the given callback.  If the call fails, then
 a falsy value and the error message are provided to the callback.
 
-=head1 AUTHOR
-
-Rob Hoelz, C<< rob at hoelz.ro >>
-
-=head1 BUGS
-
-Please report any bugs or feature requests to C<bug-AnyEvent-WebService-Tracks at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=AnyEvent-WebService-Tracks>. I will
-be notified, and then you'll automatically be notified of progress on your bug as I make changes.
-
-=head1 COPYRIGHT & LICENSE
-
-Copyright 2011 Rob Hoelz.
-
-This module is free software; you can redistribute it and/or modify it under
-the same terms as Perl itself.
-
 =head1 SEE ALSO
 
-L<http://getontracks.org>
-
+http://getontracks.org
 
 =begin comment
 

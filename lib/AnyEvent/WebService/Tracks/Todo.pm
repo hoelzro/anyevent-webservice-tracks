@@ -9,8 +9,6 @@ use Scalar::Util qw(looks_like_number);
 
 use namespace::clean;
 
-our $VERSION = '0.02';
-
 __PACKAGE__->readonly(qw/completed_at created_at id recurring_todo_id updated_at/);
 __PACKAGE__->accessor(qw/description due notes show_from/);
 
@@ -131,13 +129,7 @@ sub project {
 
 __END__
 
-=head1 NAME
-
-AnyEvent::WebService::Tracks::Todo - Tracks todo objects
-
-=head1 VERSION
-
-0.02
+# ABSTRACT: Todo resources
 
 =head1 SYNOPSIS
 
@@ -245,26 +237,9 @@ Defer this todo item.  C<$amount> can be a DateTime, a
 DateTime::Duration, or simply an integer (which is interpreted
 as the number of days to defer the item.)
 
-=head1 AUTHOR
-
-Rob Hoelz, C<< rob at hoelz.ro >>
-
-=head1 BUGS
-
-Please report any bugs or feature requests to C<bug-AnyEvent-WebService-Tracks at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=AnyEvent-WebService-Tracks>. I will
-be notified, and then you'll automatically be notified of progress on your bug as I make changes.
-
-=head1 COPYRIGHT & LICENSE
-
-Copyright 2011 Rob Hoelz.
-
-This module is free software; you can redistribute it and/or modify it under
-the same terms as Perl itself.
-
 =head1 SEE ALSO
 
-L<AnyEvent::WebService::Tracks::Resource>, L<AnyEvent::WebService::Tracks>
+AnyEvent::WebService::Tracks::Resource
 
 =begin comment
 

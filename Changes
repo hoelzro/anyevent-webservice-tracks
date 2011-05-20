@@ -1,4 +1,6 @@
-Revision history for AnyEvent-WebService-Tracks
+Revision history for {{$dist->name}}
+
+{{$NEXT}}
 
 0.02    January 26th, 2011
         Bug fixes.

@@ -4,8 +4,6 @@ use strict;
 use warnings;
 use parent 'AnyEvent::WebService::Tracks::Resource';
 
-our $VERSION = '0.02';
-
 __PACKAGE__->readonly(qw/created_at id updated_at/);
 __PACKAGE__->accessor(qw/name position/);
 
@@ -49,13 +47,7 @@ sub todos {
 
 __END__
 
-=head1 NAME
-
-AnyEvent::WebService::Tracks::Context - Tracks context objects
-
-=head1 VERSION
-
-0.02
+# ABSTRACT: Context resources
 
 =head1 SYNOPSIS
 
@@ -117,26 +109,9 @@ Unhides this context on its next update.
 Retrieves the list of todos under this context and calls C<$cb> with an
 array reference containing them.
 
-=head1 AUTHOR
-
-Rob Hoelz, C<< rob at hoelz.ro >>
-
-=head1 BUGS
-
-Please report any bugs or feature requests to C<bug-AnyEvent-WebService-Tracks at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=AnyEvent-WebService-Tracks>. I will
-be notified, and then you'll automatically be notified of progress on your bug as I make changes.
-
-=head1 COPYRIGHT & LICENSE
-
-Copyright 2011 Rob Hoelz.
-
-This module is free software; you can redistribute it and/or modify it under
-the same terms as Perl itself.
-
 =head1 SEE ALSO
 
-L<AnyEvent::WebService::Tracks::Resource>, L<AnyEvent::WebService::Tracks>
+AnyEvent::WebService::Tracks::Resource
 
 =begin comment
 
