@@ -83,7 +83,11 @@ sub update {
         return @_[1, 2];
     }, sub {
         my ( $xml, $headers ) = @_;
-        
+
+        unless(defined $xml) {
+            goto &$cb;
+        }
+
         if($self->{'parent'}->status_successful($headers->{'Status'})) {
             if($xml eq 'Success') {
                 $self->{'parent'}->do_get($url, sub {
