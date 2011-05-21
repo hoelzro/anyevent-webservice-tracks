@@ -61,7 +61,7 @@ sub handle_error {
             $message = $body;
         }
     } else {
-        $message = $headers->{'status'};
+        $message = $headers->{'Status'} . ' ' . $headers->{'Reason'};
     }
 
     $cb->(undef, $message);
