@@ -26,6 +26,10 @@ sub new {
     }, $class;
 }
 
+sub debugging {
+    return 0;
+}
+
 sub parse_datetime {
     my ( $self, $str ) = @_;
 
@@ -117,6 +121,15 @@ sub do_request {
 
     my $handle_result = sub {
         my ( $data, $headers ) = @_;
+
+        if($self->debugging) {
+            printf STDERR "%s %s - %d %s - %s\n",
+                $http_method,
+                $uri,
+                $headers->{'Status'},
+                $headers->{'Reason'},
+                $params->{'body'} // '';
+        }
 
         if($self->status_successful($headers->{'Status'})) {
             $cb->($self->$method($data, $headers));
