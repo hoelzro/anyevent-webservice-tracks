@@ -16,6 +16,8 @@ use AnyEvent::WebService::Tracks::Context;
 use AnyEvent::WebService::Tracks::Project;
 use AnyEvent::WebService::Tracks::Todo;
 
+my $DEBUG = $ENV{'AE_TRACKS_DEBUG'};
+
 sub new {
     my ( $class, %params ) = @_;
 
@@ -236,6 +238,9 @@ sub parse_entities {
         },
     );
 
+    if($DEBUG) {
+        print STDERR $xml, "\n";
+    }
     $parser->parse($xml);
 
     return \@entities;
