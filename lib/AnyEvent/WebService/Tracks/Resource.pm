@@ -83,6 +83,11 @@ sub update {
         return @_[1, 2];
     }, sub {
         my ( $xml, $headers ) = @_;
+
+        unless(defined $xml) {
+            $cb->(@_);
+            return;
+        }
         
         if($self->{'parent'}->status_successful($headers->{'Status'})) {
             if($xml eq 'Success') {
